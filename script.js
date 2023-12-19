@@ -1,19 +1,15 @@
 function searchCountry(event) {
-  event.preventDefault(); // Prevents the default form submission
+  event.preventDefault();
 
   var inputElement = document.getElementById("searchInput");
   var countryInfoElement = document.getElementById("countryInfo");
 
-  // Get the value entered by the user
   var countryName = inputElement.value;
 
-  // Fetch data from the API
   fetch(`https://restcountries.com/v3.1/name/${countryName}`)
     .then((response) => response.json())
     .then((data) => {
-      // Check if the data is available
       if (data.length > 0) {
-        // Display country information
         var country = data[0];
         var countryInfo = `
             <h2>${country.name.common}</h2>
@@ -24,7 +20,6 @@ function searchCountry(event) {
           `;
         countryInfoElement.innerHTML = countryInfo;
       } else {
-        // Display an error message if the country is not found
         countryInfoElement.innerHTML = "<p>Country not found</p>";
       }
     })

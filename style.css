@@ -1,5 +1,5 @@
 #body {
-  background-color: rgb(237, 18, 248);
+  background-color: rgb(252, 205, 255);
   margin-bottom: 300px;
 }
 
@@ -13,4 +13,23 @@
 
 #each {
   color: orange;
+}
+
+#countryInfo {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: -10px;
+  width: fit-content;
+}
+
+#countryInfo h2 {
+  color: #007bff;
+}
+
+#countryInfo p {
+  margin: 5px 0;
 }
