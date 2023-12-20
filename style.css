@@ -1,35 +1,37 @@
-#body {
-  background-color: rgb(252, 205, 255);
-  margin-bottom: 300px;
-}
-
-#allnation {
-  text-align: center;
-}
-
-#nation {
-  color: purple;
-}
-
-#each {
-  color: orange;
-}
-
 #countryInfo {
-  background-color: #fff;
+  background-color: #90fbff;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  bottom: -10px;
-  width: fit-content;
+  display: none; /* Hide the container initially */
 }
 
-#countryInfo h2 {
-  color: #007bff;
+#customSearchBtn {
+  background-color: #ba00e3;
+  color: #ffffff; /* White font color */
+  border-color: #ba00e3;
 }
 
-#countryInfo p {
-  margin: 5px 0;
+#customSearchBtn:hover {
+  background-color: #7e007f; /* Darker purple on hover */
+  border-color: #7e007f;
+  color: #ffffff; /* White font color on hover */
+}
+
+.country-data {
+  flex: 1 1 calc(33.33% - 10px); /* Adjust the width and spacing as needed */
+  margin-bottom: 10px;
+  margin: 3px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.country-data:hover {
+  background-color: #333;
+  color: #fff;
 }
