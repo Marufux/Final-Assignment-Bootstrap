@@ -12,6 +12,14 @@
   display: none; /* Hide the container initially */
 }
 
+#nation {
+  color: purple;
+}
+
+#each {
+  color: orange;
+}
+
 #customSearchBtn {
   background-color: #ba00e3;
   color: #ffffff; /* White font color */
