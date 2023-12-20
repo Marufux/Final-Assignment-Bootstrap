@@ -1,3 +1,7 @@
+#body {
+  background-color: #ffe2fd;
+}
+
 #countryInfo {
   background-color: #90fbff;
   border: 1px solid #ddd;
@@ -34,4 +38,21 @@
 .country-data:hover {
   background-color: #333;
   color: #fff;
+}
+
+#margin {
+  margin-bottom: 300px;
+}
+
+#footer {
+  position: relative;
+  right: 0px;
+  left: 0px;
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
 }
